@@ -14,7 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2020/05/HP-Hogwarts-Featured.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +39,65 @@
     transform: rotate(360deg);
   }
 }
+
+
+.user-card {
+ 
+
+  border: 2px solid silver;
+  padding: 20px;
+  margin-top: 50px;
+  /* background: red; */
+  border-radius: 5px;
+  box-shadow: 5px 10px silver;
+  color: black;
+}
+
+.user-card img {
+  width: 180px;
+  height: 200px;
+}
+
+.name-label {
+  padding: 5px;
+}
+
+
+.submit-button {
+  margin: 5px;
+
+}
+
+#Ravenclaw {
+  background:blue;
+}
+
+#Gryffindor {
+  background:red;
+}
+
+#Hufflepuff{
+  background: yellow;
+}
+
+#Slytherin {
+  background: green;
+}
+
+.card-conatiner {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.user-form {
+  position: fixed;
+}
+
+
+
+
+/* <div className={ user.house === 'Ravenclaw' ? "ravenclaw" : "card-container", 
+  user.house === 'Gryffindor' ? "ravenclaw" : "card-container", 
+  user.house === 'Hufflepuff' ? "hufflepuff" : "card-container",
+  user.house === 'Slytherin ' ? "slytherin" : "card-container"}> */
